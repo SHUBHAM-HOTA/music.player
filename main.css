@@ -1,0 +1,381 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+/* setting background for the body */
+#container {
+  margin: 0px;
+  background-image: url(assets/images/background-2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* nav-bar */
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: inherit;
+  height: 50px;
+  background-color: lightblue;
+  opacity: 0.8;
+  background-attachment: fixed;
+}
+#name-logo {
+  width: fit-content;
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+#logo {
+  margin: 0px;
+  display: inline-block;
+}
+
+#logo img {
+  width: 40px;
+  height: 40px;
+  margin: 0.3rem 0.5rem 0.2rem 0.5rem;
+}
+
+.name {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  margin-left: 0.2rem;
+}
+
+.name h1 {
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+.name p {
+  font-size: 1rem;
+  margin: 0rem;
+}
+
+#fav {
+  margin-left: 3%;
+}
+
+#fav p {
+  margin-top: 14px;
+}
+
+/* search-bar */
+
+#search-bar > div {
+  display: inline-block;
+}
+
+#search-bar {
+  margin-top: 9px;
+  position: absolute;
+  right: 15%;
+}
+#search-box {
+  border-radius: 50px;
+  background: white;
+  border: 2px solid lightblue;
+  padding: 5px;
+}
+
+#search-box form {
+  margin: 0;
+}
+
+#search-box input,
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+#bell {
+  position: absolute;
+  right: 10%;
+  margin-top: 0.8rem;
+  font-size: 1.3rem;
+}
+
+#user {
+  position: absolute;
+  right: 2%;
+  margin-top: 0.3rem;
+  height: 40px;
+  width: 40px;
+  background-image: url(assets/images/cris-evans.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+/* main section */
+
+main {
+  width: 96%;
+  height: 88vh;
+  margin-top: 0%;
+  border: 1px solid red;
+  position: relative;
+  top: 10%;
+  left: 2%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.section-1 {
+  margin-top: 1%;
+  width: 70%;
+  height: 91%;
+  overflow: scroll;
+  border: 1px solid red;
+  overflow-x: hidden;
+}
+
+.section-2 {
+  margin-top: 1%;
+  width: 28%;
+  height: 91%;
+  overflow: scroll;
+  border: 1px solid red;
+  overflow-x: hidden;
+}
+.section-1::-webkit-scrollbar {
+  display: none;
+}
+.section-2::-webkit-scrollbar {
+  display: none;
+}
+.carousel {
+  border: 1px solid red;
+  width: 90%;
+  height: 30%;
+  position: relative;
+  left: 5%;
+  top: 5%;
+  justify-content: space-around;
+  overflow: visible;
+}
+
+.carousel img {
+  transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+  box-shadow: 0px 0px 15px 8px black;
+  /* transition: all ease-in-out 0.1s; */
+}
+
+#ariana {
+  position: relative;
+  left: 14%;
+  z-index: 1;
+}
+#arjit {
+  z-index: 3;
+}
+#selena {
+  position: relative;
+  right: 14%;
+  z-index: 2;
+}
+
+#ariana:hover {
+  z-index: 5;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 15px 8px rgba(230, 196, 196, 0.3);
+}
+#arjit:hover {
+  z-index: 5;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 15px 8px rgba(230, 196, 196, 0.3);
+}
+#selena:hover {
+  z-index: 5;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 15px 8px rgba(230, 196, 196, 0.3);
+}
+
+/* latest release section starting from here */
+
+.section-box {
+  margin-top: 8%;
+  border: 1px solid red;
+  width: 90%;
+  height: auto;
+  position: relative;
+  left: 5%;
+}
+.container-of-items {
+  height: auto;
+  position: relative;
+  top: -15%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box-heading {
+  font-size: 1.2rem;
+  color: blanchedalmond;
+  position: relative;
+  top: -10%;
+}
+
+.song-box {
+  color: white;
+  width: 45%;
+  height: 100px;
+  position: relative;
+  top: 0;
+  margin-top: 3%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+.song-box img {
+  position: absolute;
+  width: 35%;
+  height: auto;
+}
+
+.song-name {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+}
+
+.release-date {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+.song-box i {
+  position: absolute;
+  top: 5%;
+  right: 0%;
+}
+.song-duration {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+}
+
+.song-box:nth-child(2n) {
+  margin-left: 8%;
+}
+
+/* populer artist section */
+.artist {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 50%;
+  background-image: url(assets/images/ed-sheeran-1.jpg);
+}
+.song-card {
+  padding-bottom: 4%;
+}
+
+.song-card img {
+  width: 7rem;
+  height: auto;
+  border-radius: 7%;
+}
+.song-card p {
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.song-card img:hover {
+  box-shadow: 0px 0px 10px 1px white;
+}
+
+#genre-container {
+  margin-top: 5%;
+}
+
+.genre {
+  width: 30%;
+  height: auto;
+}
+
+.genre img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.genre img:hover {
+  box-shadow: 0px 0px 10px 1px white;
+  opacity: 0.5;
+}
+.genre p {
+  text-align: center;
+  top: 25%;
+  color: white;
+}
+
+/* ------------------------------------------------- */
+
+#main-gen-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.gen-out {
+  width: 16vw;
+  height: 13vw;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.gen-in {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: all ease-in-out 0.2s;
+}
+
+.gen-in span {
+  color: white;
+  font-size: 1.6rem;
+  transition: all ease-in-out 0.2s;
+}
+
+#electronic {
+  background-image: url(assets/images/electronic-genre-2.jpg);
+}
+
+#road-trip {
+  background-image: url(assets/images/road-trip-2.jpg);
+}
+
+#party {
+  background-image: url(assets/images/party-genre.jpg);
+}
+
+.gen-out:hover .gen-in {
+  transform: scale(1.2);
+}
+
+.gen-out:hover .gen-in > span {
+  transform: scale(0.7);
+}
+
+.gen-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
