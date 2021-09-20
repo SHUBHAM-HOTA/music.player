@@ -5,7 +5,9 @@ body {
 /* setting background for the body */
 #container {
   margin: 0px;
-  background-image: url(assets/images/background-2.jpg);
+  /* background-image: url(assets/images/background-2.jpg); */
+  /* background-image: linear-gradient(#0c1027, #162739); */
+  background-color: #0c1027;
   background-size: cover;
   background-attachment: fixed;
   width: 100vw;
@@ -118,7 +120,6 @@ main {
   width: 96%;
   height: 88vh;
   margin-top: 0%;
-  border: 1px solid red;
   position: relative;
   top: 10%;
   left: 2%;
@@ -137,7 +138,6 @@ main {
   width: 70%;
   height: 91%;
   overflow: scroll;
-  border: 1px solid red;
   overflow-x: hidden;
 }
 
@@ -146,8 +146,8 @@ main {
   width: 28%;
   height: 91%;
   overflow: scroll;
-  border: 1px solid red;
   overflow-x: hidden;
+  border: 1px solid red;
 }
 .section-1::-webkit-scrollbar {
   display: none;
@@ -156,7 +156,6 @@ main {
   display: none;
 }
 .carousel {
-  border: 1px solid red;
   width: 90%;
   height: 30%;
   position: relative;
@@ -179,6 +178,7 @@ main {
 }
 #arjit {
   z-index: 3;
+  transform: scale(1.1);
 }
 #selena {
   position: relative;
@@ -186,19 +186,9 @@ main {
   z-index: 2;
 }
 
-#ariana:hover {
-  z-index: 5;
-  transform: scale(1.2);
-  box-shadow: 0px 0px 15px 8px rgba(230, 196, 196, 0.3);
-}
-#arjit:hover {
-  z-index: 5;
-  transform: scale(1.2);
-  box-shadow: 0px 0px 15px 8px rgba(230, 196, 196, 0.3);
-}
-#selena:hover {
-  z-index: 5;
-  transform: scale(1.2);
+.carousel img:hover {
+  z-index: 5 !important;
+  transform: scale(1.2) !important;
   box-shadow: 0px 0px 15px 8px rgba(230, 196, 196, 0.3);
 }
 
@@ -206,7 +196,6 @@ main {
 
 .section-box {
   margin-top: 8%;
-  border: 1px solid red;
   width: 90%;
   height: auto;
   position: relative;
@@ -231,18 +220,26 @@ main {
 .song-box {
   color: white;
   width: 45%;
-  height: 100px;
+  height: 7.1vw;
   position: relative;
   top: 0;
   margin-top: 3%;
   padding-bottom: 2%;
   padding-top: 2%;
+  border: 2px solid #101642;
+}
+
+.song-box:hover {
+  background-color: #101642;
+  box-shadow: 0px 0px 15px 1px black;
+  cursor: pointer;
 }
 
 .song-box img {
   position: absolute;
   width: 35%;
   height: auto;
+  top: 0%;
 }
 
 .song-name {
@@ -260,12 +257,12 @@ main {
 .song-box i {
   position: absolute;
   top: 5%;
-  right: 0%;
+  right: 5%;
 }
 .song-duration {
   position: absolute;
   top: 15%;
-  right: 0%;
+  right: 5%;
 }
 
 /* populer artist section */
@@ -274,8 +271,8 @@ main {
   width: 100px;
   height: 100px;
   background-size: cover;
+  background-position: center;
   border-radius: 50%;
-  background-image: url(assets/images/ed-sheeran-1.jpg);
   margin: 10px;
 }
 .artist span {
@@ -285,6 +282,30 @@ main {
   left: 20%;
 }
 
+.artist:nth-child(1) {
+  background-image: url(assets/images/artists/ariana.png);
+}
+
+.artist:nth-child(2) {
+  background-image: url(assets/images/ed-sheeran-1.jpg);
+}
+
+.artist:nth-child(3) {
+  background-image: url(assets/images/ed-sheeran-1.jpg);
+}
+
+.artist:nth-child(4) {
+  background-image: url(assets/images/ed-sheeran-1.jpg);
+}
+
+.artist:nth-child(5) {
+  background-image: url(assets/images/ed-sheeran-1.jpg);
+}
+
+.artist:nth-child(6) {
+  background-image: url(assets/images/ed-sheeran-1.jpg);
+}
+
 /* songs based on language section */
 .song-card {
   padding-bottom: 4%;
@@ -292,7 +313,7 @@ main {
 
 .song-card img {
   width: 7rem;
-  height: auto;
+  height: 7rem;
   border-radius: 7%;
 }
 .song-card p {
@@ -360,15 +381,15 @@ main {
 }
 
 #electronic {
-  background-image: url(assets/images/electronic-genre-2.jpg);
+  background-image: url(assets/images/electronic-small.png);
 }
 
 #road-trip {
-  background-image: url(assets/images/road-trip-2.jpg);
+  background-image: url(assets/images/road-small.png);
 }
 
 #party {
-  background-image: url(assets/images/party-genre.jpg);
+  background-image: url(assets/images/party-small.png);
 }
 
 .gen-out:hover .gen-in {
@@ -388,8 +409,84 @@ main {
 
 /* ------------------------------------------------ */
 
-/* station section */
+/* podcast section */
 
-#station {
-  background-color: teal;
+#podcast {
+  background-color: #101642;
+  height: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
+/* podcast icon */
+
+#div-1 {
+  width: 10vw;
+  height: 6vw;
+  background-color: #f9d64c;
+  margin-top: 3.5vw;
+  margin-left: 12px;
+  overflow: visible;
+  margin-bottom: 45px;
+}
+
+#div-2 {
+  width: 8.5vw;
+  height: 8.5vw;
+  background-color: #f0bc10;
+  top: 2.2vw;
+  left: 3vw;
+  position: absolute;
+}
+
+#div-3 {
+  width: 6.9vw;
+  height: 10.5vw;
+  background-color: #ff4f0a;
+  top: -1vw;
+  left: 0.8vw;
+  position: absolute;
+}
+#div-3 i {
+  font-size: 5.5vw;
+  position: absolute;
+  left: 1.1vw;
+  top: 2.2vw;
+  color: white;
+}
+/* podcast circles */
+.pod-circle {
+  width: 6.9vw;
+  height: 6.9vw;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  margin: 5px;
+  margin-top: 2vw;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pod-circle span {
+  position: relative;
+  color: white;
+  top: 2.7vw;
+}
+
+.pod-circle:nth-child(2) {
+  background-image: url(assets/images/pop.png);
+}
+.pod-circle:nth-child(3) {
+  background-image: url(assets/images/rock.png);
+}
+.pod-circle:nth-child(4) {
+  background-image: url(assets/images/chill.png);
+}
+.pod-circle:nth-child(5) {
+  background-image: url(assets/images/love.png);
+}
+/* ---------------------------------------------------------- */
