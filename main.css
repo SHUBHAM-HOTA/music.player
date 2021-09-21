@@ -23,6 +23,7 @@ body {
   background-color: #76595b;
   opacity: 0.8;
   background-attachment: fixed;
+  box-shadow: 0px 0px 6px 5px #798133;
 }
 
 #nav-bar {
@@ -176,20 +177,11 @@ main {
   overflow-x: hidden;
 }
 
-.section-2 {
-  margin-top: 1%;
-  width: 28%;
-  height: 91%;
-  overflow: scroll;
-  overflow-x: hidden;
-  border: 1px solid red;
-}
 .section-1::-webkit-scrollbar {
   display: none;
 }
-.section-2::-webkit-scrollbar {
-  display: none;
-}
+/* -------------------------------------------- */
+/* .carousel section */
 .carousel {
   width: 90%;
   height: 30%;
@@ -228,7 +220,7 @@ main {
   box-shadow: 0px 0px 15px 8px rgba(230, 196, 196, 0.3);
   cursor: pointer;
 }
-
+/* --------------------------------------- */
 /* latest release section starting from here */
 
 .section-box {
@@ -555,3 +547,166 @@ main {
   }
 }
 /* ---------------------------------------------------------- */
+
+/* section-2 starting from here */
+
+.section-2 {
+  margin-top: 1%;
+  width: 28%;
+  height: 91%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.section-2::-webkit-scrollbar {
+  display: none;
+}
+
+.title-of-aside {
+  width: 100%;
+  height: 10%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+}
+
+.heading {
+  font-size: 1.5rem;
+}
+.dropdown {
+  color: #eaf777;
+  margin-right: 5%;
+  display: table;
+}
+.dropdown > span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.queue-song-box > div {
+  display: inline-block;
+}
+
+.queue-song-box {
+  color: white;
+  height: 3.5vw;
+  position: relative;
+  margin-top: 3.5vh;
+  padding: 5px;
+  /* border: 1px solid #101642; */
+}
+
+.queue-song-box:hover {
+  background-color: #101642;
+  cursor: pointer;
+}
+
+.image {
+  width: 3.5vw;
+  height: 3.5vw;
+  background-size: cover;
+  border-radius: 8%;
+  margin-left: 3vw;
+}
+
+.number {
+  position: absolute;
+  display: table;
+  width: auto;
+  top: 1.4vw;
+  left: 0.5vw;
+}
+
+.name-and-artist {
+  height: 100%;
+  margin-left: 1.5vw;
+}
+
+.heart {
+  position: absolute;
+  right: 1.5vw;
+  top: 1.4vw;
+  z-index: 1;
+}
+
+.heart-full {
+  color: transparent;
+  position: absolute;
+  right: 1.5vw;
+  top: 1.4vw;
+  z-index: 2;
+}
+
+.heart-full:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+/* --------------------------------------- */
+
+.artist-name-h1 {
+  position: absolute;
+  top: 2.2vw;
+  color: gray;
+  font-size: 1vw;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+.song-name-h1 {
+  position: absolute;
+  top: 0.5vw;
+  font-size: 1.1rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+/* --------------------------------------- */
+#song-1 {
+  background-image: url(assets/images/latest-release/hotair.jpg);
+}
+
+#song-2 {
+  background-image: url(assets/images/english-songs/idol.jpg);
+}
+
+#song-3 {
+  background-image: url(assets/images/hindi-songs/param\ sundari.jpg);
+}
+
+#song-4 {
+  background-image: url(assets/images/english-songs/taylar-swift.jpeg);
+}
+
+#song-5 {
+  background-image: url(assets/images/hindi-songs/tum\ ho.jpg);
+}
+
+#song-6 {
+  background-image: url(assets/images/english-songs/katty.jpg);
+}
+
+#song-7 {
+  background-image: url(assets/images/hindi-songs/lahore.jpg);
+}
+
+#song-8 {
+  background-image: url(assets/images/english-songs/nick.png);
+}
+
+#song-9 {
+  background-image: url(assets/images/hindi-songs/dil\ bechara.jpg);
+}
+
+#song-10 {
+  background-image: url(assets/images/hindi-songs/is\ qdar.jpg);
+}
+
+#song-11 {
+  background-image: url(assets/images/latest-release/square-image.jpg);
+}
+
+/* -------------------------------------- */
