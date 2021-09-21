@@ -2,11 +2,9 @@ body {
   margin: 0px;
   overflow: hidden;
 }
-/* setting background for the body */
+
 #container {
   margin: 0px;
-  /* background-image: url(assets/images/background-2.jpg); */
-  /* background-image: linear-gradient(#0c1027, #162739); */
   background-color: #0c1027;
   background-size: cover;
   background-attachment: fixed;
@@ -20,10 +18,19 @@ body {
   top: 0;
   width: inherit;
   height: 50px;
-  background-color: lightblue;
+  background-color: #3b5f8a;
+  background-color: #798133 !important;
+  background-color: #76595b;
   opacity: 0.8;
   background-attachment: fixed;
 }
+
+#nav-bar {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.2rem;
+}
+
 #name-logo {
   width: fit-content;
   margin-left: 1rem;
@@ -81,7 +88,7 @@ body {
 #search-box {
   border-radius: 50px;
   background: white;
-  border: 2px solid lightblue;
+  border: 2px solid #798133;
   padding: 5px;
 }
 
@@ -101,6 +108,11 @@ button {
   right: 10%;
   margin-top: 0.8rem;
   font-size: 1.3rem;
+  color: white;
+}
+
+#bell:hover {
+  animation: shake 1.5s 1 alternate;
 }
 
 #user {
@@ -114,14 +126,37 @@ button {
   border-radius: 50%;
 }
 
+/* bell animation */
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
 /* main section */
 
 main {
   width: 96%;
-  height: 88vh;
+  height: 92vh;
   margin-top: 0%;
   position: relative;
-  top: 10%;
+  top: 8%;
   left: 2%;
 }
 
