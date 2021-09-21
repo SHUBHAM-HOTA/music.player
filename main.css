@@ -198,16 +198,23 @@ main {
 }
 
 #carousel-img-1 {
+  height: 14vw;
+  width: 24vw;
   position: relative;
   left: 14%;
+  top: -2%;
   z-index: 1;
   transform: scale(0.8);
 }
 #carousel-img-2 {
+  width: 22vw;
+  height: 13vw;
   z-index: 3;
   transform: scale(1.1);
 }
 #carousel-img-3 {
+  height: 13vw;
+  width: 24vw;
   position: relative;
   right: 14%;
   z-index: 2;
@@ -344,6 +351,7 @@ main {
 /* songs based on language section */
 .song-card {
   padding-bottom: 4%;
+  margin: 10px;
 }
 
 .song-card img {
@@ -580,13 +588,38 @@ main {
 .dropdown {
   color: #eaf777;
   margin-right: 5%;
-  display: table;
-}
-.dropdown > span {
-  display: table-cell;
-  vertical-align: middle;
+  position: relative;
+  display: inline-block;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #eaf777;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  z-index: 5 !important;
+}
+
+.dropdown-content a {
+  color: #0c1027;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  background-color: #101642;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ------------------------------------- */
 .queue-song-box > div {
   display: inline-block;
 }
