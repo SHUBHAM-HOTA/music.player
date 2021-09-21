@@ -287,19 +287,20 @@ main {
 }
 
 .artist:nth-child(2) {
-  background-image: url(assets/images/ed-sheeran-1.jpg);
+  background-image: url(assets/images/artists/rihanna.jpg);
+  background-position: left;
 }
 
 .artist:nth-child(3) {
-  background-image: url(assets/images/ed-sheeran-1.jpg);
+  background-image: url(assets/images/artists/arjit.jpg);
 }
 
 .artist:nth-child(4) {
-  background-image: url(assets/images/ed-sheeran-1.jpg);
+  background-image: url(assets/images/artists/Shirleysetiya.jpg);
 }
 
 .artist:nth-child(5) {
-  background-image: url(assets/images/ed-sheeran-1.jpg);
+  background-image: url(assets/images/artists/TaylorSwift.jpg);
 }
 
 .artist:nth-child(6) {
