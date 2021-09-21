@@ -109,7 +109,7 @@ button {
   margin-top: 0.3rem;
   height: 40px;
   width: 40px;
-  background-image: url(assets/images/cris-evans.jpg);
+  background-image: url(assets/images/nav-bar/cris-evans.jpg);
   background-size: cover;
   border-radius: 50%;
 }
@@ -168,28 +168,30 @@ main {
 .carousel img {
   transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
   box-shadow: 0px 0px 15px 8px black;
-  /* transition: all ease-in-out 0.1s; */
 }
 
-#ariana {
+#carousel-img-1 {
   position: relative;
   left: 14%;
   z-index: 1;
+  transform: scale(0.8);
 }
-#arjit {
+#carousel-img-2 {
   z-index: 3;
   transform: scale(1.1);
 }
-#selena {
+#carousel-img-3 {
   position: relative;
   right: 14%;
   z-index: 2;
+  transform: scale(0.9);
 }
 
 .carousel img:hover {
   z-index: 5 !important;
   transform: scale(1.2) !important;
   box-shadow: 0px 0px 15px 8px rgba(230, 196, 196, 0.3);
+  cursor: pointer;
 }
 
 /* latest release section starting from here */
@@ -275,6 +277,11 @@ main {
   border-radius: 50%;
   margin: 10px;
 }
+
+.artist:hover {
+  cursor: pointer;
+}
+
 .artist span {
   color: white;
   position: absolute;
@@ -304,7 +311,7 @@ main {
 }
 
 .artist:nth-child(6) {
-  background-image: url(assets/images/ed-sheeran-1.jpg);
+  background-image: url(assets/images/artists/ed-sheeran-1.jpg);
 }
 
 /* songs based on language section */
@@ -382,15 +389,15 @@ main {
 }
 
 #electronic {
-  background-image: url(assets/images/electronic-small.png);
+  background-image: url(assets/images/genre/electronic-small.png);
 }
 
 #road-trip {
-  background-image: url(assets/images/road-small.png);
+  background-image: url(assets/images/genre/road-small.png);
 }
 
 #party {
-  background-image: url(assets/images/party-small.png);
+  background-image: url(assets/images/genre/party-small.png);
 }
 
 .gen-out:hover .gen-in {
@@ -479,15 +486,37 @@ main {
 }
 
 .pod-circle:nth-child(2) {
-  background-image: url(assets/images/pop.png);
+  background-image: url(assets/images/podcast/pop.png);
 }
 .pod-circle:nth-child(3) {
-  background-image: url(assets/images/rock.png);
+  background-image: url(assets/images/podcast/rock.png);
 }
 .pod-circle:nth-child(4) {
-  background-image: url(assets/images/chill.png);
+  background-image: url(assets/images/podcast/chill.png);
 }
 .pod-circle:nth-child(5) {
-  background-image: url(assets/images/love.png);
+  background-image: url(assets/images/podcast/love.png);
+}
+
+/* podcast animation */
+
+.pod-circle:hover {
+  transition: all 2s ease-in-out;
+  animation: pulse 0.6s infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
 }
 /* ---------------------------------------------------------- */
