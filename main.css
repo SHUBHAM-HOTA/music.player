@@ -219,7 +219,7 @@ main {
   position: relative;
   right: 14%;
   z-index: 2;
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 
 .carousel img:hover {
