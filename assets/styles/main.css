@@ -333,27 +333,27 @@ main {
   left: 20%;
 }
 #Ariana {
-  background-image: url(/assets/images/artists/ariana.png);
+  background-image: url(../images/artists/ariana.png);
 }
 
 #Rihanna {
-  background-image: url(/assets/images/artists/rihanna.jpg);
+  background-image: url(../images/artists/rihanna.jpg);
 }
 
 #Arjit {
-  background-image: url(/assets/images/artists/arjit.jpg);
+  background-image: url(../images/artists/arjit.jpg);
 }
 
 #Shirley {
-  background-image: url(/assets/images/artists/Shirleysetiya.jpg);
+  background-image: url(../images/artists/Shirleysetiya.jpg);
 }
 
 #tailor {
-  background-image: url(/assets/images/artists/TaylorSwift.jpg);
+  background-image: url(../images/artists/TaylorSwift.jpg);
 }
 
 #Ed {
-  background-image: url(/assets/images/artists/ed-sheeran-1.jpg);
+  background-image: url(../images/artists/ed-sheeran-1.jpg);
 }
 
 /* songs based on language section */
@@ -528,16 +528,20 @@ main {
   top: 2.7vw;
 }
 
-.pod-circle:nth-child(2) {
+.pod-c-inblock {
+  display: inline-block;
+}
+
+#pop {
   background-image: url(../images/podcast/pop.png);
 }
-.pod-circle:nth-child(3) {
+#rock {
   background-image: url(../images/podcast/rock.png);
 }
-.pod-circle:nth-child(4) {
+#chill {
   background-image: url(../images/podcast/chill.png);
 }
-.pod-circle:nth-child(5) {
+#love {
   background-image: url(../images/podcast/love.png);
 }
 
@@ -588,6 +592,9 @@ main {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   position: sticky;
+  top: -1px;
+  z-index: 2;
+  background-color: #0c1027;
 }
 
 .heading {
@@ -604,14 +611,13 @@ main {
   display: none;
   position: absolute;
   background-color: #eaf777;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
   z-index: 5 !important;
 }
 
 .dropdown-content a {
   color: #0c1027;
-  padding: 12px 16px;
+  padding: 0.5vw 1vw;
   text-decoration: none;
   display: block;
   font-size: 1rem;
@@ -671,7 +677,7 @@ main {
   position: absolute;
   right: 1.5vw;
   top: 1.2vw;
-  z-index: 5;
+  z-index: 1;
 }
 
 .fill-red {

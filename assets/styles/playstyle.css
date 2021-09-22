@@ -10,6 +10,7 @@ body {
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;
+  font-family: sans-serif !important;
 }
 
 /* nav-bar */
@@ -194,13 +195,8 @@ main {
   margin-left: 5%;
   width: 28%;
   height: 91%;
-  overflow: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
   border: 1px solid red;
-}
-
-.section-2::-webkit-scrollbar {
-  display: none;
 }
 
 .main-art-img {
@@ -410,4 +406,48 @@ main {
 
 #song-10 {
   background-image: url(../images/hindi-songs/is\ qdar.jpg);
+}
+
+/* -------------------------- */
+
+.art-recent-container {
+  width: 100%;
+  height: 50%;
+  border: 1px solid red;
+  overflow: scroll;
+}
+
+.art-recent-container::-webkit-scrollbar {
+  display: none;
+}
+
+.title-box {
+  width: 100%;
+  height: 4vw;
+  background-color: #101642;
+  color: white;
+  position: relative;
+}
+
+.a-h-name {
+  position: absolute;
+  top: 1vw;
+  font-size: 1.4vw;
+  left: 1.5vw;
+}
+
+.v-all {
+  position: absolute;
+  top: 1.2vw;
+  right: 1vw;
+  color: gray;
+  font-size: 1vw;
+}
+
+.recently-played {
+  right: 1vw;
+}
+
+.remove-border {
+  border: none;
 }
