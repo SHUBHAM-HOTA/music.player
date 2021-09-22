@@ -1,0 +1,413 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+#container {
+  margin: 0px;
+  background-color: #0c1027;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* nav-bar */
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: inherit;
+  height: 50px;
+  background-color: #3b5f8a;
+  background-color: #798133 !important;
+  background-color: #76595b;
+  opacity: 0.8;
+  background-attachment: fixed;
+  box-shadow: 0px 0px 6px 5px #798133;
+}
+
+#nav-bar {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.2rem;
+}
+
+#name-logo {
+  width: fit-content;
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+#logo {
+  margin: 0px;
+  display: inline-block;
+}
+
+#logo img {
+  width: 40px;
+  height: 40px;
+  margin: 0.3rem 0.5rem 0.2rem 0.5rem;
+}
+
+.name {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  margin-left: 0.2rem;
+}
+
+.name h1 {
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+.name p {
+  font-size: 1rem;
+  margin: 0rem;
+}
+
+#fav {
+  margin-left: 3%;
+}
+
+#fav p {
+  margin-top: 14px;
+}
+
+/* search-bar */
+
+#search-bar > div {
+  display: inline-block;
+}
+
+#search-bar {
+  margin-top: 9px;
+  position: absolute;
+  right: 15%;
+}
+#search-box {
+  border-radius: 50px;
+  background: white;
+  border: 2px solid #798133;
+  padding: 5px;
+}
+
+#search-box form {
+  margin: 0;
+}
+
+#search-box input,
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+#bell {
+  position: absolute;
+  right: 10%;
+  margin-top: 0.8rem;
+  font-size: 1.3rem;
+  color: white;
+}
+
+#bell:hover {
+  animation: shake 1.5s 1 alternate;
+}
+
+#user {
+  position: absolute;
+  right: 2%;
+  margin-top: 0.3rem;
+  height: 40px;
+  width: 40px;
+  background-image: url(/assets/images/nav-bar/cris-evans.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+/* bell animation */
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
+/* main section */
+
+main {
+  width: 87%;
+  height: 90vh;
+  margin-top: 0%;
+  position: relative;
+  top: 10%;
+  left: 7.5%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.section-1 {
+  margin-top: 1%;
+  width: 65%;
+  height: 91%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.section-1::-webkit-scrollbar {
+  display: none;
+}
+.main-artist-box {
+  width: 56.5vw;
+  height: 20vw;
+  left: 7.5vw;
+  background-color: #101642;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1vw;
+}
+
+.section-2 {
+  margin-top: 1%;
+  margin-left: 5%;
+  width: 28%;
+  height: 91%;
+  overflow: scroll;
+  overflow-x: hidden;
+  border: 1px solid red;
+}
+
+.section-2::-webkit-scrollbar {
+  display: none;
+}
+
+.main-art-img {
+  background-image: url(/assets/images/artists/diljit-singh.jpg);
+  background-size: cover;
+  background-position: top;
+  width: 22vw;
+  height: 19.95vw;
+}
+
+.main-art-details {
+  height: 19.95vw;
+  width: 34vw;
+  position: relative;
+}
+
+.artist-name {
+  color: white;
+  font-size: 2vw;
+  letter-spacing: 0.1vw;
+  position: absolute;
+  top: 3vw;
+  left: 1.8vw;
+}
+
+.language {
+  position: absolute;
+  top: 5.4vw;
+  left: 1.8vw;
+}
+
+.grey {
+  font-size: 1.2vw;
+  color: gray;
+  letter-spacing: 1px;
+  line-height: 1.8vw;
+  word-spacing: 0px;
+}
+
+.followers {
+  position: absolute;
+  top: 3vw;
+  right: 2.5vw;
+}
+
+.description {
+  position: absolute;
+  top: 8vw;
+  left: 1.8vw;
+  text-align: justify;
+  margin-right: 2.5vw;
+}
+
+.button {
+  position: absolute;
+  top: 14vw;
+  left: 1.6vw;
+  background-image: linear-gradient(#403066, #2857a4);
+  border: none;
+  color: white;
+  padding: 0.7vw 2vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-simple {
+  position: absolute;
+  top: 14.8vw;
+  left: 12vw;
+  color: white;
+  font-size: 1vw;
+  cursor: pointer;
+}
+
+/* ---------------------------------------- */
+.song-bar-container {
+  width: 56.5vw;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.song-bar-container::-webkit-scrollbar {
+  display: none;
+}
+
+.queue-song-box > div {
+  display: inline-block;
+}
+
+.queue-song-box {
+  color: white;
+  height: 3.5vw;
+  position: relative;
+  margin-top: 3.5vh;
+  padding: 5px;
+  border: 2px solid #101642;
+}
+
+.queue-song-box:hover {
+  background-color: #101642;
+  cursor: pointer;
+}
+
+.image {
+  width: 3.5vw;
+  height: 3.5vw;
+  background-size: cover;
+  border-radius: 8%;
+  margin-left: 3vw;
+}
+
+.number {
+  position: absolute;
+  display: table;
+  width: auto;
+  top: 1.4vw;
+  left: 0.5vw;
+}
+
+.name-and-artist {
+  height: 100%;
+  margin-left: 1.5vw;
+}
+
+.heart {
+  position: absolute;
+  right: 5vw;
+  top: 1.2vw;
+}
+
+.fill-red:hover {
+  fill: red;
+  stroke: red;
+}
+
+.plus {
+  position: absolute;
+  right: 2vw;
+  top: 1.4vw;
+}
+
+.plus:hover {
+  color: yellowgreen;
+}
+
+.active-song {
+  position: absolute;
+  left: 23vw;
+  top: 0.2vw;
+}
+/* --------------------------------------- */
+
+.artist-name-h1 {
+  position: absolute;
+  top: 2.2vw;
+  color: gray;
+  font-size: 1vw;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+.song-name-h1 {
+  position: absolute;
+  top: 0.5vw;
+  font-size: 1.1rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+/* --------------------------------------- */
+#song-1 {
+  background-image: url(/assets/images/latest-release/hotair.jpg);
+}
+
+#song-2 {
+  background-image: url(/assets/images/english-songs/idol.jpg);
+}
+
+#song-3 {
+  background-image: url(/assets/images/hindi-songs/param\ sundari.jpg);
+}
+
+#song-4 {
+  background-image: url(/assets/images/english-songs/taylar-swift.jpeg);
+}
+
+#song-5 {
+  background-image: url(/assets/images/hindi-songs/tum\ ho.jpg);
+}
+
+#song-6 {
+  background-image: url(/assets/images/english-songs/katty.jpg);
+}
+
+#song-7 {
+  background-image: url(/assets/images/hindi-songs/lahore.jpg);
+}
+
+#song-8 {
+  background-image: url(/assets/images/english-songs/nick.png);
+}
+
+#song-9 {
+  background-image: url(/assets/images/hindi-songs/dil\ bechara.jpg);
+}
+
+#song-10 {
+  background-image: url(/assets/images/hindi-songs/is\ qdar.jpg);
+}

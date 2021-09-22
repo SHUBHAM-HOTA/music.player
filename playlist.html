@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/playstyle.css" />
     <link rel="icon" href="assets/images/nav-bar/logo.png" />
     <script
       src="https://kit.fontawesome.com/a0cda4cdb6.js"
       crossorigin="anonymous"
     ></script>
-    <title>Music Player</title>
+
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+
+    <title>Music Player playlist</title>
   </head>
   <body>
     <div id="container">
@@ -46,221 +49,25 @@
 
       <main class="flex-row">
         <section class="section-1 flex-column">
-          <div class="carousel flex-row">
-            <img
-              id="carousel-img-1"
-              src="assets/images/carousel/section-375.jpg"
-              alt="section-375"
-            />
-            <img
-              id="carousel-img-2"
-              src="assets/images/carousel/dil-bechara.jpg"
-              alt="dil-bechara"
-            />
-            <img
-              id="carousel-img-3"
-              src="assets/images/carousel/wp8056271-scam-1992-wallpapers.jpg"
-              alt="scam-1992"
-            />
-          </div>
-
-          <!-- latest Release Section -->
-
-          <div class="latest-release section-box">
-            <div class="box-heading">
-              <h4>Latest Release</h4>
-            </div>
-            <div class="container-of-items">
-              <div class="song-box">
-                <img src="assets/images/latest-release/disc.png" alt="" />
-                <p class="song-name">Onism</p>
-                <p class="release-date">AUG 11,2021</p>
-                <i class="fas fa-ellipsis-h"></i>
-                <p class="song-duration">4:57</p>
-              </div>
-              <div class="song-box">
-                <img src="assets/images/latest-release/hotair.jpg" alt="" />
-                <p class="song-name">Onism</p>
-                <p class="release-date">AUG 11,2021</p>
-                <i class="fas fa-ellipsis-h"></i>
-                <p class="song-duration">4:57</p>
-              </div>
-              <div class="song-box">
-                <img src="assets/images/latest-release/mic.png" alt="" />
-                <p class="song-name">Onism</p>
-                <p class="release-date">AUG 11,2021</p>
-                <i class="fas fa-ellipsis-h"></i>
-                <p class="song-duration">4:57</p>
-              </div>
-              <div class="song-box">
-                <img
-                  src="assets/images/latest-release/square-image.jpg"
-                  alt=""
-                />
-                <p class="song-name">Onism</p>
-                <p class="release-date">AUG 11,2021</p>
-                <i class="fas fa-ellipsis-h"></i>
-                <p class="song-duration">4:57</p>
-              </div>
-            </div>
-          </div>
-          <!-- Popular Artist section -->
-          <div class="section-box">
-            <div class="box-heading">
-              <h4>Popular Artists</h4>
-            </div>
-            <div class="container-of-items" id="artist-container">
-              <div class="artist">
-                <span>Ariana</span>
-              </div>
-              <div class="artist"><span>Rihanna</span></div>
-              <div class="artist"><span>Arjit Singh</span></div>
-              <div class="artist"><span>Shirley</span></div>
-              <div class="artist"><span>tailor swift</span></div>
-              <div class="artist"><span>Ed shreen</span></div>
-            </div>
-          </div>
-          <!-- podcast container -->
-          <div class="section-box" id="podcast">
-            <div id="podcast-logo">
-              <div id="div-1">
-                <div id="div-2">
-                  <div id="div-3">
-                    <span><i class="fas fa-podcast"></i></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pod-circle"><span>Pop</span></div>
-            <div class="pod-circle"><span>Rock</span></div>
-            <div class="pod-circle"><span>Chill</span></div>
-            <div class="pod-circle"><span>Love</span></div>
-          </div>
-          <!-- music-genre-section -->
-
-          <div class="section-box" id="main-gen-box">
-            <div class="gen-out">
-              <div class="gen-in" id="electronic">
-                <span>Electronic</span>
-              </div>
-            </div>
-            <div class="gen-out">
-              <div class="gen-in" id="road-trip">
-                <span>Road Trip</span>
-              </div>
-            </div>
-            <div class="gen-out">
-              <div class="gen-in" id="party">
-                <span>Party</span>
-              </div>
-            </div>
-          </div>
-          <!-- latest-english section -->
-
-          <div class="section-box">
-            <div class="box-heading">
-              <h4>Latest English</h4>
-            </div>
-            <div class="container-of-items">
-              <div class="song-card">
-                <img src="assets/images/english-songs/katty.jpg" alt="" />
-                <p class="name-on-card">Electric</p>
-                <p class="date-on-card">AUG 11,2021</p>
-              </div>
-              <div class="song-card">
-                <img src="assets/images/english-songs/angels.jpg" alt="" />
-                <p class="name-on-card">Angels like you</p>
-                <p class="date-on-card">AUG 11,2021</p>
-              </div>
-              <div class="song-card">
-                <img src="assets/images/english-songs/venom.jpg" alt="" />
-                <p class="name-on-card">Venom</p>
-                <p class="date-on-card">AUG 11,2021</p>
-              </div>
-              <div class="song-card">
-                <img
-                  src="assets/images/english-songs/taylar-swift.jpeg"
-                  alt=""
-                />
-                <p class="name-on-card">Me</p>
-                <p class="date-on-card">AUG 11,2021</p>
-              </div>
-              <div class="song-card">
-                <img src="assets/images/english-songs/nick.png" alt="" />
-                <p class="name-on-card">Find you</p>
-                <p class="date-on-card">AUG 11,2021</p>
-              </div>
-              <div class="song-card">
-                <img src="assets/images/english-songs/idol.jpg" alt="" />
-                <p class="name-on-card">Idol BTS</p>
-                <p class="date-on-card">AUG 11,2021</p>
+          <div class="main-artist-box">
+            <div class="main-art-img"></div>
+            <div class="main-art-details">
+              <div class="details">
+                <span class="artist-name">Diljit Dosanjh</span>
+                <span class="language grey">Punjabi Singer</span>
+                <span class="description grey">
+                  Diljit Dosanjh is an Indian singer-songwriter, actor and
+                  television presenter who works in Punjabi and Hindi cinema.
+                </span>
+                <span class="followers grey">10M Followers </span>
+                <button class="button">Play All</button>
+                <button class="button-simple">Follow</button>
               </div>
             </div>
           </div>
 
-          <!-- latest-hindi -->
-
-          <div class="section-box" id="latest-hindi">
-            <div class="box-heading">
-              <h4>Latest Hindi</h4>
-            </div>
-            <div class="container-of-items">
-              <div class="song-card">
-                <img src="assets/images/hindi-songs/chhor denge.jpg" alt="" />
-                <p class="name-on-card">Chhor denge</p>
-                <p class="date-on-card">AUG 11,2021</p>
-              </div>
-              <div class="song-card">
-                <img src="assets/images/hindi-songs/is qdar.jpg" alt="" />
-                <p class="name-on-card">Is qadar</p>
-                <p class="date-on-card">AUG 11,2021</p>
-              </div>
-              <div class="song-card">
-                <img src="assets/images/hindi-songs/param sundari.jpg" alt="" />
-                <p class="name-on-card">Param sundari</p>
-                <p class="date-on-card">AUG 11,2021</p>
-              </div>
-              <div class="song-card">
-                <img src="assets/images/hindi-songs/dil bechara.jpg" alt="" />
-                <p class="name-on-card">Dil bechara</p>
-                <p class="date-on-card">AUG 11,2021</p>
-              </div>
-              <div class="song-card">
-                <img src="assets/images/hindi-songs/tum ho.jpg" alt="" />
-                <p class="name-on-card">Tum ho</p>
-                <p class="date-on-card">AUG 11,2021</p>
-              </div>
-              <div class="song-card">
-                <img src="assets/images/hindi-songs/lahore.jpg" alt="" />
-                <p class="name-on-card">Lahore</p>
-                <p class="date-on-card">AUG 11,2021</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- starting of queue section -->
-        <section class="section-2">
-          <!-- title of this section -->
-          <div class="title-of-aside">
-            <div class="heading">
-              <span>Queue</span>
-            </div>
-            <div class="dropdown">
-              <span>Queue &nbsp&nbsp&nbsp </span>
-              <span id="downicon"
-                ><i class="fas fa-chevron-circle-down"></i
-              ></span>
-              <div class="dropdown-content">
-                <a href="#">Playlists</a>
-                <a href="#">Favourites</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- list of songs -->
-          <div class="list-of-songs">
-            <!-- ---------------------------------------- -->
+          <!-- ------------------------------ -->
+          <div class="song-bar-container">
             <div class="queue-song-box">
               <div class="number"><span>01</span></div>
               <div class="image" id="song-1"></div>
@@ -287,6 +94,14 @@
                   />
                 </svg>
               </div>
+              <div class="plus"><i class="fas fa-plus"></i></div>
+              <div class="active-song"><lord-icon
+                src="https://cdn.lordicon.com/mmspidej.json"
+                trigger="loop"
+                colors="primary:#d1faf0,secondary:#08a88a"
+                stroke="37"
+                style="width:50px;height:50px">
+            </lord-icon></i></div>
             </div>
             <!-- ---------------------------------------- -->
             <div class="queue-song-box">
@@ -315,6 +130,7 @@
                   />
                 </svg>
               </div>
+              <div class="plus"><i class="fas fa-plus"></i></div>
             </div>
 
             <!-- ---------------------------------------- -->
@@ -344,6 +160,7 @@
                   />
                 </svg>
               </div>
+              <div class="plus"><i class="fas fa-plus"></i></div>
             </div>
 
             <!-- ---------------------------------------- -->
@@ -373,6 +190,7 @@
                   />
                 </svg>
               </div>
+              <div class="plus"><i class="fas fa-plus"></i></div>
             </div>
 
             <!-- ---------------------------------------- -->
@@ -402,6 +220,7 @@
                   />
                 </svg>
               </div>
+              <div class="plus"><i class="fas fa-plus"></i></div>
             </div>
 
             <!-- ---------------------------------------- -->
@@ -431,6 +250,7 @@
                   />
                 </svg>
               </div>
+              <div class="plus"><i class="fas fa-plus"></i></div>
             </div>
 
             <!-- ---------------------------------------- -->
@@ -460,6 +280,7 @@
                   />
                 </svg>
               </div>
+              <div class="plus"><i class="fas fa-plus"></i></div>
             </div>
 
             <!-- ---------------------------------------- -->
@@ -489,6 +310,7 @@
                   />
                 </svg>
               </div>
+              <div class="plus"><i class="fas fa-plus"></i></div>
             </div>
 
             <!-- ---------------------------------------- -->
@@ -518,6 +340,7 @@
                   />
                 </svg>
               </div>
+              <div class="plus"><i class="fas fa-plus"></i></div>
             </div>
 
             <!-- ---------------------------------------- -->
@@ -547,40 +370,14 @@
                   />
                 </svg>
               </div>
-            </div>
+              <div class="plus"><i class="fas fa-plus"></i></div>
+              
 
-            <!-- ---------------------------------------- -->
-            <div class="queue-song-box">
-              <div class="number"><span>11</span></div>
-              <div class="image" id="song-11"></div>
-              <div class="name-and-artist">
-                <div><p class="song-name-h1">Onism</p></div>
-                <div><p class="artist-name-h1">Else</p></div>
-              </div>
-              <div class="heart">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-heart fill-red"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  stroke-width="0.9"
-                  stroke="#ffffff"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
-                  />
-                </svg>
-              </div>
             </div>
-
-            <!-- ----------------------------------------- -->
           </div>
         </section>
+
+        <section class="section-2"></section>
       </main>
     </div>
   </body>
