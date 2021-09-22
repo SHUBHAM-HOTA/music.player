@@ -332,30 +332,28 @@ main {
   bottom: -20%;
   left: 20%;
 }
-
-.artist:nth-child(1) {
-  background-image: url(../images/artists/ariana.png);
+#Ariana {
+  background-image: url(/assets/images/artists/ariana.png);
 }
 
-.artist:nth-child(2) {
-  background-image: url(../images/artists/rihanna.jpg);
-  background-position: left;
+#Rihanna {
+  background-image: url(/assets/images/artists/rihanna.jpg);
 }
 
-.artist:nth-child(3) {
-  background-image: url(../images/artists/arjit.jpg);
+#Arjit {
+  background-image: url(/assets/images/artists/arjit.jpg);
 }
 
-.artist:nth-child(4) {
-  background-image: url(../images/artists/Shirleysetiya.jpg);
+#Shirley {
+  background-image: url(/assets/images/artists/Shirleysetiya.jpg);
 }
 
-.artist:nth-child(5) {
-  background-image: url(../images/artists/TaylorSwift.jpg);
+#tailor {
+  background-image: url(/assets/images/artists/TaylorSwift.jpg);
 }
 
-.artist:nth-child(6) {
-  background-image: url(../images/artists/ed-sheeran-1.jpg);
+#Ed {
+  background-image: url(/assets/images/artists/ed-sheeran-1.jpg);
 }
 
 /* songs based on language section */
