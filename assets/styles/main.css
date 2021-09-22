@@ -12,6 +12,14 @@ body {
   height: 100vh;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* nav-bar */
 #nav-bar {
   position: fixed;
@@ -122,7 +130,7 @@ button {
   margin-top: 0.3rem;
   height: 40px;
   width: 40px;
-  background-image: url(/assets/images/nav-bar/cris-evans.jpg);
+  background-image: url(../images/nav-bar/cris-evans.jpg);
   background-size: cover;
   border-radius: 50%;
 }
@@ -254,6 +262,7 @@ main {
 }
 
 .song-box {
+  display: inline-block;
   color: white;
   width: 45%;
   height: 7.1vw;
@@ -269,6 +278,7 @@ main {
   background-color: #101642;
   box-shadow: 0px 0px 15px 1px black;
   cursor: pointer;
+  color: white;
 }
 
 .song-box img {
@@ -324,28 +334,28 @@ main {
 }
 
 .artist:nth-child(1) {
-  background-image: url(/assets/images/artists/ariana.png);
+  background-image: url(../images/artists/ariana.png);
 }
 
 .artist:nth-child(2) {
-  background-image: url(/assets/images/artists/rihanna.jpg);
+  background-image: url(../images/artists/rihanna.jpg);
   background-position: left;
 }
 
 .artist:nth-child(3) {
-  background-image: url(/assets/images/artists/arjit.jpg);
+  background-image: url(../images/artists/arjit.jpg);
 }
 
 .artist:nth-child(4) {
-  background-image: url(/assets/images/artists/Shirleysetiya.jpg);
+  background-image: url(../images/artists/Shirleysetiya.jpg);
 }
 
 .artist:nth-child(5) {
-  background-image: url(/assets/images/artists/TaylorSwift.jpg);
+  background-image: url(../images/artists/TaylorSwift.jpg);
 }
 
 .artist:nth-child(6) {
-  background-image: url(/assets/images/artists/ed-sheeran-1.jpg);
+  background-image: url(../images/artists/ed-sheeran-1.jpg);
 }
 
 /* songs based on language section */
@@ -424,15 +434,15 @@ main {
 }
 
 #electronic {
-  background-image: url(/assets/images/genre/electronic-small.png);
+  background-image: url(../images/genre/electronic-small.png);
 }
 
 #road-trip {
-  background-image: url(/assets/images/genre/road-small.png);
+  background-image: url(../images/genre/road-small.png);
 }
 
 #party {
-  background-image: url(/assets/images/genre/party-small.png);
+  background-image: url(../images/genre/party-small.png);
 }
 
 .gen-out:hover .gen-in {
@@ -521,16 +531,16 @@ main {
 }
 
 .pod-circle:nth-child(2) {
-  background-image: url(/assets/images/podcast/pop.png);
+  background-image: url(../images/podcast/pop.png);
 }
 .pod-circle:nth-child(3) {
-  background-image: url(/assets/images/podcast/rock.png);
+  background-image: url(../images/podcast/rock.png);
 }
 .pod-circle:nth-child(4) {
-  background-image: url(/assets/images/podcast/chill.png);
+  background-image: url(../images/podcast/chill.png);
 }
 .pod-circle:nth-child(5) {
-  background-image: url(/assets/images/podcast/love.png);
+  background-image: url(../images/podcast/love.png);
 }
 
 /* podcast animation */
@@ -694,47 +704,47 @@ main {
 }
 /* --------------------------------------- */
 #song-1 {
-  background-image: url(/assets/images/latest-release/hotair.jpg);
+  background-image: url(../images/latest-release/hotair.jpg);
 }
 
 #song-2 {
-  background-image: url(/assets/images/english-songs/idol.jpg);
+  background-image: url(../images/english-songs/idol.jpg);
 }
 
 #song-3 {
-  background-image: url(/assets/images/hindi-songs/param\ sundari.jpg);
+  background-image: url(../images/hindi-songs/param\ sundari.jpg);
 }
 
 #song-4 {
-  background-image: url(/assets/images/english-songs/taylar-swift.jpeg);
+  background-image: url(../images/english-songs/taylar-swift.jpeg);
 }
 
 #song-5 {
-  background-image: url(/assets/images/hindi-songs/tum\ ho.jpg);
+  background-image: url(../images/hindi-songs/tum\ ho.jpg);
 }
 
 #song-6 {
-  background-image: url(/assets/images/english-songs/katty.jpg);
+  background-image: url(../images/english-songs/katty.jpg);
 }
 
 #song-7 {
-  background-image: url(/assets/images/hindi-songs/lahore.jpg);
+  background-image: url(../images/hindi-songs/lahore.jpg);
 }
 
 #song-8 {
-  background-image: url(/assets/images/english-songs/nick.png);
+  background-image: url(../images/english-songs/nick.png);
 }
 
 #song-9 {
-  background-image: url(/assets/images/hindi-songs/dil\ bechara.jpg);
+  background-image: url(../images/hindi-songs/dil\ bechara.jpg);
 }
 
 #song-10 {
-  background-image: url(/assets/images/hindi-songs/is\ qdar.jpg);
+  background-image: url(../images/hindi-songs/is\ qdar.jpg);
 }
 
 #song-11 {
-  background-image: url(/assets/images/latest-release/square-image.jpg);
+  background-image: url(../images/latest-release/square-image.jpg);
 }
 
 /* -------------------------------------- */

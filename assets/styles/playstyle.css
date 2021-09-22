@@ -122,7 +122,7 @@ button {
   margin-top: 0.3rem;
   height: 40px;
   width: 40px;
-  background-image: url(/assets/images/nav-bar/cris-evans.jpg);
+  background-image: url(../images/nav-bar/cris-evans.jpg);
   background-size: cover;
   border-radius: 50%;
 }
@@ -204,7 +204,7 @@ main {
 }
 
 .main-art-img {
-  background-image: url(/assets/images/artists/diljit-singh.jpg);
+  background-image: url(../images/artists/diljit-singh.jpg);
   background-size: cover;
   background-position: top;
   width: 22vw;
@@ -373,41 +373,41 @@ main {
 }
 /* --------------------------------------- */
 #song-1 {
-  background-image: url(/assets/images/latest-release/hotair.jpg);
+  background-image: url(../images/latest-release/hotair.jpg);
 }
 
 #song-2 {
-  background-image: url(/assets/images/english-songs/idol.jpg);
+  background-image: url(../images/english-songs/idol.jpg);
 }
 
 #song-3 {
-  background-image: url(/assets/images/hindi-songs/param\ sundari.jpg);
+  background-image: url(../images/hindi-songs/param\ sundari.jpg);
 }
 
 #song-4 {
-  background-image: url(/assets/images/english-songs/taylar-swift.jpeg);
+  background-image: url(../images/english-songs/taylar-swift.jpeg);
 }
 
 #song-5 {
-  background-image: url(/assets/images/hindi-songs/tum\ ho.jpg);
+  background-image: url(../images/hindi-songs/tum\ ho.jpg);
 }
 
 #song-6 {
-  background-image: url(/assets/images/english-songs/katty.jpg);
+  background-image: url(../images/english-songs/katty.jpg);
 }
 
 #song-7 {
-  background-image: url(/assets/images/hindi-songs/lahore.jpg);
+  background-image: url(../images/hindi-songs/lahore.jpg);
 }
 
 #song-8 {
-  background-image: url(/assets/images/english-songs/nick.png);
+  background-image: url(../images/english-songs/nick.png);
 }
 
 #song-9 {
-  background-image: url(/assets/images/hindi-songs/dil\ bechara.jpg);
+  background-image: url(../images/hindi-songs/dil\ bechara.jpg);
 }
 
 #song-10 {
-  background-image: url(/assets/images/hindi-songs/is\ qdar.jpg);
+  background-image: url(../images/hindi-songs/is\ qdar.jpg);
 }
