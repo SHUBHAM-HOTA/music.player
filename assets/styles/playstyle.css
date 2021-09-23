@@ -196,7 +196,6 @@ main {
   width: 28%;
   height: 91%;
   overflow: hidden;
-  border: 1px solid red;
 }
 
 .main-art-img {
@@ -289,9 +288,9 @@ main {
 }
 
 .queue-song-box {
+  position: relative;
   color: white;
   height: 3.5vw;
-  position: relative;
   margin-top: 3.5vh;
   padding: 5px;
   border: 2px solid #101642;
@@ -410,10 +409,82 @@ main {
 
 /* -------------------------- */
 
+.big-artist-box > div {
+  display: inline-block;
+}
+
+.big-artist-box {
+  position: relative;
+  color: white;
+  height: 6vw;
+  margin-top: 3.5vh;
+  margin-bottom: 2vh;
+  padding: 5px;
+  border: 2px solid #101642;
+}
+
+.big-artist-box:hover {
+  background-color: #101642;
+  cursor: pointer;
+}
+
+.art-image {
+  width: 6vw;
+  height: 6vw;
+  background-size: cover;
+  border-radius: 8%;
+  margin-left: 0vw;
+}
+
+.art-and-language {
+  height: 100%;
+  margin-left: 1.5vw;
+}
+
+.lang-name-h1 {
+  position: absolute;
+  top: 3vw;
+  color: gray;
+  font-size: 1vw;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+.art-name-h1 {
+  position: absolute;
+  top: 1vw;
+  font-size: 1.1rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+.dot-icon {
+  position: absolute;
+  right: 2vw;
+  top: 1vw;
+}
+
+/* ------------------------------------- */
+#art-1 {
+  background-image: url(../images/artists/arjit.jpg);
+}
+#art-2 {
+  background-image: url(../images/artists/ariana.png);
+}
+#art-3 {
+  background-image: url(../images/artists/rihanna.jpg);
+}
+#art-4 {
+  background-image: url(../images/artists/Shirleysetiya.jpg);
+}
+#art-5 {
+  background-image: url(../images/artists/TaylorSwift.jpg);
+}
+/* --------------------------------------------- */
 .art-recent-container {
   width: 100%;
   height: 50%;
-  border: 1px solid red;
+  position: relative;
   overflow: scroll;
 }
 
@@ -422,26 +493,29 @@ main {
 }
 
 .title-box {
-  width: 100%;
+  width: 24.3vw;
   height: 4vw;
   background-color: #101642;
   color: white;
-  position: relative;
+  z-index: 2;
+  position: sticky;
+  top: 0;
 }
 
 .a-h-name {
-  position: absolute;
-  top: 1vw;
+  display: inline-block;
   font-size: 1.4vw;
-  left: 1.5vw;
+  margin-left: 1.5vw;
+  margin-top: 1vw;
 }
 
 .v-all {
-  position: absolute;
-  top: 1.2vw;
-  right: 1vw;
+  display: inline-block;
   color: gray;
   font-size: 1vw;
+  float: right;
+  margin-right: 1.5vw;
+  margin-top: 1.2vw;
 }
 
 .recently-played {
