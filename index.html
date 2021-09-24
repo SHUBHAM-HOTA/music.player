@@ -15,7 +15,7 @@
   <body>
     <div id="container">
       <div id="nav-bar">
-        <div id="name-logo">
+        <div id="name-logo" class="cursor">
           <div id="logo">
             <img src="assets/images/nav-bar/logo.png" alt="" />
           </div>
@@ -24,22 +24,26 @@
             <p>studio</p>
           </div>
         </div>
-        <div class="name" id="fav">
+        <div class="name cursor" id="fav">
           <p>Favourites</p>
         </div>
         <div id="search-bar" class="name">
           <div id="search-box">
             <form action="">
-              <button type="submit"><i class="fas fa-search"></i></button>
+              <button type="submit" class="cursor">
+                <i class="fas fa-search"></i>
+              </button>
               <input type="text" placeholder="Search..." />
-              <button type="submit"><i class="fas fa-microphone"></i></button>
+              <button type="submit" class="cursor">
+                <i class="fas fa-microphone"></i>
+              </button>
             </form>
           </div>
         </div>
-        <div class="name" id="bell">
+        <div class="name cursor" id="bell">
           <i class="fas fa-bell"></i>
         </div>
-        <div class="name" id="user" title="Profile">
+        <div class="name cursor" id="user" title="Profile">
           <div id="user-logo"></div>
         </div>
       </div>
@@ -173,17 +177,17 @@
           <!-- music-genre-section -->
 
           <div class="section-box" id="main-gen-box">
-            <div class="gen-out">
+            <div class="gen-out cursor">
               <div class="gen-in" id="electronic">
                 <span>Electronic</span>
               </div>
             </div>
-            <div class="gen-out">
+            <div class="gen-out cursor">
               <div class="gen-in" id="road-trip">
                 <span>Road Trip</span>
               </div>
             </div>
-            <div class="gen-out">
+            <div class="gen-out cursor">
               <div class="gen-in" id="party">
                 <span>Party</span>
               </div>
@@ -616,6 +620,44 @@
           </div>
         </section>
       </main>
+      <div class="footer">
+        <div class="left-part corner">
+          <div class="play-img">
+            <img src="assets/images/english-songs/idol.jpg" alt="" />
+          </div>
+          <div class="play-name-art">
+            <p class="p-song-name">Bts</p>
+            <p class="p-art-name">Pop</p>
+          </div>
+          <div class="icon-class">
+            <span class="p-ban"><i class="fas fa-ban"></i></span>
+            <span class="p-heart"><i class="far fa-heart"></i></span>
+          </div>
+        </div>
+        <div class="mid-part">
+          <div class="media-buttons">
+            <span class="suffle"><i class="fas fa-random"></i></span>
+            <span><i class="fas fa-step-backward"></i></span>
+            <span><i class="far fa-pause-circle"></i></span>
+            <span><i class="fas fa-step-forward"></i></span>
+            <span class="loop"><i class="fas fa-undo-alt"></i></span>
+          </div>
+          <div class="progress-bar">
+            <div class="duration">2:23</div>
+            <div class="bar"><input type="range" class="custom-range" /></div>
+            <div class="duration">5:20</div>
+          </div>
+        </div>
+        <div class="right-part corner">
+          <div class="margin">
+            <span><i class="fas fa-stream"></i></span>
+            <span><i class="fas fa-download"></i></span>
+            <span><i class="fas fa-volume-up"></i></span>
+            <input type="range" class="custom-range-2" />
+            <span><i class="fas fa-expand-alt"></i></span>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
