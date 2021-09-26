@@ -18,33 +18,35 @@
   <body>
     <div id="container">
       <div id="nav-bar">
-        <div id="name-logo">
+        <div id="name-logo" class="cursor">
           <div id="logo">
-            <a href="index.html">
-              <img src="assets/images/nav-bar/logo.png" alt="" />
-            </a>
+            <img src="assets/images/nav-bar/logo.png" alt="" />
           </div>
           <div class="name">
             <h1>Black Pearl</h1>
             <p>studio</p>
           </div>
         </div>
-        <div class="name" id="fav">
+        <div class="name cursor" id="fav">
           <p>Favourites</p>
         </div>
         <div id="search-bar" class="name">
           <div id="search-box">
             <form action="">
-              <button type="submit"><i class="fas fa-search"></i></button>
+              <button type="submit" class="cursor hide">
+                <i class="fas fa-search"></i>
+              </button>
               <input type="text" placeholder="Search..." />
-              <button type="submit"><i class="fas fa-microphone"></i></button>
+              <button type="submit" class="cursor">
+                <i class="fas fa-microphone"></i>
+              </button>
             </form>
           </div>
         </div>
-        <div class="name" id="bell">
+        <div class="name cursor" id="bell">
           <i class="fas fa-bell"></i>
         </div>
-        <div class="name" id="user" title="Profile">
+        <div class="name cursor" id="user" title="Profile">
           <div id="user-logo"></div>
         </div>
       </div>
@@ -676,11 +678,11 @@
         </div>
         <div class="right-part corner">
           <div class="margin">
-            <span><i class="fas fa-stream"></i></span>
-            <span><i class="fas fa-download"></i></span>
+            <span class="hide"><i class="fas fa-stream"></i></span>
+            <span class="hide"><i class="fas fa-download"></i></span>
             <span><i class="fas fa-volume-up"></i></span>
             <input type="range" class="custom-range-2" />
-            <span><i class="fas fa-expand-alt"></i></span>
+            <span class="hide"><i class="fas fa-expand-alt"></i></span>
           </div>
         </div>
       </div>

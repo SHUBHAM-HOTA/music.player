@@ -30,6 +30,7 @@ a:active {
   opacity: 0.8;
   background-attachment: fixed;
   box-shadow: 0px 0px 6px 5px #1498a5;
+  z-index: 10;
 }
 
 #nav-bar {
@@ -223,7 +224,7 @@ main {
   transform: scale(1.1);
 }
 #carousel-img-3 {
-  height: 13vw;
+  height: 14vw;
   width: 24vw;
   position: relative;
   right: 14%;
@@ -240,7 +241,7 @@ main {
 /* --------------------------------------- */
 /* latest release section starting from here */
 
-.section-box {
+/* .section-box {
   margin-top: 8%;
   width: 90%;
   height: auto;
@@ -311,8 +312,84 @@ main {
   position: absolute;
   top: 15%;
   right: 5%;
+} */
+/* -----temp--code--here----- */
+
+.section-box {
+  margin-top: 8%;
+  width: 90%;
+  height: auto;
+  position: relative;
+  left: 5%;
+}
+.container-of-items {
+  height: auto;
+  top: -15%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.box-heading {
+  font-size: 1.2rem;
+  color: blanchedalmond;
+  top: -10%;
 }
 
+.song-box {
+  display: inline-block;
+  color: white;
+  width: 45%;
+  height: 9.5vw;
+  position: relative;
+  top: 0;
+  margin-top: 3%;
+  border: 2px solid #101642;
+}
+
+.song-box-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.song-box:hover {
+  background-color: #101642;
+  box-shadow: 0px 0px 15px 1px black;
+  cursor: pointer;
+  color: white;
+}
+
+.song-box img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  top: 0%;
+}
+
+.song-name {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+}
+
+.release-date {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+.song-box i {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.song-duration {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
+
+/* --------------------- */
 /* populer artist section */
 .artist {
   position: relative;
@@ -411,6 +488,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .gen-out {
@@ -697,9 +775,9 @@ main {
 
 .artist-name-h1 {
   position: absolute;
-  top: 2.2vw;
+  top: 2.5vw;
   color: gray;
-  font-size: 1vw;
+  font-size: 1.2vw;
   margin: 0;
   letter-spacing: 0.1rem;
 }
@@ -770,6 +848,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   box-shadow: 0px 0px 8px 1px black;
+  z-index: 11;
 }
 
 .corner {
@@ -894,4 +973,224 @@ main {
 
 .footer span {
   cursor: pointer;
+}
+#ham {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+#queue-as-menu {
+  position: fixed;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.1s ease-out;
+}
+
+#queue-as-menu:target {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 9;
+  background-color: #0c1027;
+  border-right: 3px solid #101642;
+}
+
+@media screen and (max-width: 999px) {
+  .section-2 {
+    width: 0;
+    height: 0;
+  }
+  .section-1 {
+    width: 95vw;
+  }
+
+  .footer {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  #carousel-img-1 {
+    height: 18vw;
+    width: 30vw;
+    position: relative;
+    left: 8%;
+    top: -2%;
+    z-index: 1;
+    transform: scale(0.8);
+  }
+  #carousel-img-2 {
+    width: 27vw;
+    height: 18vw;
+    z-index: 3;
+    transform: scale(1.1);
+  }
+  #carousel-img-3 {
+    height: 18vw;
+    width: 30vw;
+    position: relative;
+    right: 8%;
+    z-index: 2;
+    transform: scale(0.8);
+  }
+  #div-1 {
+    margin-left: -0.7vw;
+  }
+  .pod-circle {
+    width: 8vw;
+    height: 8vw;
+  }
+  .gen-out {
+    width: 19vw;
+    height: 15vw;
+  }
+  .song-box {
+    height: 13vw;
+  }
+  #bell {
+    height: 0;
+    width: 0;
+  }
+  #ham {
+    width: 50px;
+    height: 50px;
+    z-index: 8;
+    position: fixed;
+    top: 70px;
+    left: 15px;
+  }
+  .queue-song-box {
+    border: 1px solid #101642;
+  }
+  .last-queue-song-box {
+    margin-bottom: 250px;
+  }
+  .artist-name-h1 {
+    display: none;
+  }
+  .list-of-songs {
+    margin-left: 1vw;
+  }
+  .heading {
+    margin-left: 1.5vw;
+  }
+  #restore-button {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .song-box {
+    width: 85%;
+    height: 15vw;
+  }
+  #queue-as-menu {
+    width: 60vw !important;
+  }
+  .pod-circle {
+    width: 11vw;
+    height: 11vw;
+  }
+  #podcast-logo,
+  #div-1,
+  #div-2,
+  #div-3 {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .gen-out {
+    width: 27vw;
+    height: 20vw;
+  }
+  #fav {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  #bell {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .queue-song-box {
+    height: 50px;
+  }
+  .image {
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+  }
+  .number {
+    top: 18px;
+    left: 0.5vw;
+  }
+  .song-name-h1 {
+    top: 18px;
+  }
+  .heart {
+    top: 13px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .gen-out {
+    width: 55%;
+    height: 40vw;
+    margin-bottom: 20px;
+  }
+  .title-of-aside {
+    height: 60px;
+  }
+  .song-box {
+    width: 85%;
+    height: 18vw;
+  }
+  .song-name,
+  .release-date {
+    margin-left: -40px;
+  }
+  .icon-class {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .corner {
+    width: 25%;
+  }
+  .play-name-art {
+    width: 6vw;
+  }
+  .mid-part {
+    width: 50%;
+  }
+  .suffle {
+    margin-left: 0;
+    display: none;
+  }
+  .loop {
+    margin-right: 0;
+    display: none;
+  }
+  .margin {
+    margin-left: 1vw;
+  }
+  .hide {
+    display: none;
+  }
+  .custom-range-2 {
+    width: 60%;
+  }
+  #search-box input {
+    width: 11.5vw;
+  }
+  #queue-as-menu {
+    width: 70vw !important;
+  }
 }

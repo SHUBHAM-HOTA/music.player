@@ -30,7 +30,7 @@
         <div id="search-bar" class="name">
           <div id="search-box">
             <form action="">
-              <button type="submit" class="cursor">
+              <button type="submit" class="cursor hide">
                 <i class="fas fa-search"></i>
               </button>
               <input type="text" placeholder="Search..." />
@@ -77,7 +77,7 @@
 
             <div class="container-of-items">
               <a href="playlist.html" class="song-box">
-                <div>
+                <div class="song-box-inner">
                   <img src="assets/images/latest-release/disc.png" alt="" />
                   <p class="song-name">Onism</p>
                   <p class="release-date">AUG 11,2021</p>
@@ -86,7 +86,7 @@
                 </div>
               </a>
               <a href="playlist.html" class="song-box">
-                <div>
+                <div class="song-box-inner">
                   <img src="assets/images/latest-release/hotair.jpg" alt="" />
                   <p class="song-name">Onism</p>
                   <p class="release-date">AUG 11,2021</p>
@@ -95,7 +95,7 @@
                 </div>
               </a>
               <a href="playlist.html" class="song-box">
-                <div>
+                <div class="song-box-inner">
                   <img src="assets/images/latest-release/mic.png" alt="" />
                   <p class="song-name">Onism</p>
                   <p class="release-date">AUG 11,2021</p>
@@ -104,7 +104,7 @@
                 </div>
               </a>
               <a href="playlist.html" class="song-box">
-                <div>
+                <div class="song-box-inner">
                   <img
                     src="assets/images/latest-release/square-image.jpg"
                     alt=""
@@ -277,7 +277,7 @@
           </div>
         </section>
 
-        <!-- starting of queue section -->
+        <!-- starting of section 2 -->
         <section class="section-2">
           <!-- title of this section -->
           <div class="title-of-aside">
@@ -650,12 +650,385 @@
         </div>
         <div class="right-part corner">
           <div class="margin">
-            <span><i class="fas fa-stream"></i></span>
-            <span><i class="fas fa-download"></i></span>
+            <span class="hide"><i class="fas fa-stream"></i></span>
+            <span class="hide"><i class="fas fa-download"></i></span>
             <span><i class="fas fa-volume-up"></i></span>
             <input type="range" class="custom-range-2" />
-            <span><i class="fas fa-expand-alt"></i></span>
+            <span class="hide"><i class="fas fa-expand-alt"></i></span>
           </div>
+        </div>
+      </div>
+      <div id="ham">
+        <a href="#queue-as-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu-2"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#439da5"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+          </svg>
+        </a>
+      </div>
+
+      <div id="queue-as-menu">
+        <div class="title-of-aside">
+          <div class="heading">
+            <span>Queue</span>
+          </div>
+          <div id="restore-button">
+            <a href="#ham">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-backspace"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5z"
+                />
+                <path d="M12 10l4 4m0 -4l-4 4" /></svg
+            ></a>
+          </div>
+        </div>
+
+        <!-- list of songs -->
+        <div class="list-of-songs">
+          <!-- ---------------------------------------- -->
+          <div class="queue-song-box">
+            <div class="number"><span>01</span></div>
+            <div class="image" id="song-1"></div>
+            <div class="name-and-artist">
+              <div><p class="song-name-h1">Mirage</p></div>
+              <div><p class="artist-name-h1">Else</p></div>
+            </div>
+            <div class="heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart fill-red"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="0.9"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+          </div>
+          <!-- ---------------------------------------- -->
+          <div class="queue-song-box">
+            <div class="number"><span>02</span></div>
+            <div class="image" id="song-2"></div>
+            <div class="name-and-artist">
+              <div><p class="song-name-h1">Idol by bts</p></div>
+              <div><p class="artist-name-h1">Bts</p></div>
+            </div>
+            <div class="heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart fill-red"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="0.9"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------- -->
+          <div class="queue-song-box">
+            <div class="number"><span>03</span></div>
+            <div class="image" id="song-3"></div>
+            <div class="name-and-artist">
+              <div><p class="song-name-h1">Param Sundari</p></div>
+              <div><p class="artist-name-h1">Mimi</p></div>
+            </div>
+            <div class="heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart fill-red"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="0.9"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------- -->
+          <div class="queue-song-box">
+            <div class="number"><span>04</span></div>
+            <div class="image" id="song-4"></div>
+            <div class="name-and-artist">
+              <div><p class="song-name-h1">Me</p></div>
+              <div><p class="artist-name-h1">Taylar Swift</p></div>
+            </div>
+            <div class="heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart fill-red"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="0.9"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------- -->
+          <div class="queue-song-box">
+            <div class="number"><span>05</span></div>
+            <div class="image" id="song-5"></div>
+            <div class="name-and-artist">
+              <div><p class="song-name-h1">Tum Ho</p></div>
+              <div><p class="artist-name-h1">Unknown</p></div>
+            </div>
+            <div class="heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart fill-red"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="0.9"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------- -->
+          <div class="queue-song-box">
+            <div class="number"><span>06</span></div>
+            <div class="image" id="song-6"></div>
+            <div class="name-and-artist">
+              <div><p class="song-name-h1">Electric</p></div>
+              <div><p class="artist-name-h1">Katty Parry</p></div>
+            </div>
+            <div class="heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart fill-red"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="0.9"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------- -->
+          <div class="queue-song-box">
+            <div class="number"><span>07</span></div>
+            <div class="image" id="song-7"></div>
+            <div class="name-and-artist">
+              <div><p class="song-name-h1">Lahore</p></div>
+              <div><p class="artist-name-h1">Guru Randhawa</p></div>
+            </div>
+            <div class="heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart fill-red"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="0.9"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------- -->
+          <div class="queue-song-box">
+            <div class="number"><span>08</span></div>
+            <div class="image" id="song-8"></div>
+            <div class="name-and-artist">
+              <div><p class="song-name-h1">Find You</p></div>
+              <div><p class="artist-name-h1">Nick Johns</p></div>
+            </div>
+            <div class="heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart fill-red"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="0.9"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------- -->
+          <div class="queue-song-box">
+            <div class="number"><span>09</span></div>
+            <div class="image" id="song-9"></div>
+            <div class="name-and-artist">
+              <div><p class="song-name-h1">Dil Bechara</p></div>
+              <div><p class="artist-name-h1">Unknown</p></div>
+            </div>
+            <div class="heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart fill-red"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="0.9"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------- -->
+          <div class="queue-song-box">
+            <div class="number"><span>10</span></div>
+            <div class="image" id="song-10"></div>
+            <div class="name-and-artist">
+              <div><p class="song-name-h1">Is Qadar</p></div>
+              <div><p class="artist-name-h1">Darshan Rawal</p></div>
+            </div>
+            <div class="heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart fill-red"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="0.9"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------- -->
+          <div class="queue-song-box last-queue-song-box">
+            <div class="number"><span>11</span></div>
+            <div class="image" id="song-11"></div>
+            <div class="name-and-artist">
+              <div><p class="song-name-h1">Onism</p></div>
+              <div><p class="artist-name-h1">Else</p></div>
+            </div>
+            <div class="heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart fill-red"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke-width="0.9"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- ----------------------------------------- -->
         </div>
       </div>
     </div>

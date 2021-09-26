@@ -104,8 +104,7 @@ button {
   outline: none;
 }
 
-#search-box 
-button {
+#search-box button {
   cursor: pointer;
 }
 
@@ -360,7 +359,7 @@ main {
   position: absolute;
   top: 2.2vw;
   color: gray;
-  font-size: 1vw;
+  font-size: 1.2vw;
   margin: 0;
   letter-spacing: 0.1rem;
 }
@@ -546,7 +545,6 @@ main {
   justify-content: space-between;
   box-shadow: 0px 0px 8px 1px black;
 }
-}
 
 .corner {
   height: 60px;
@@ -668,6 +666,268 @@ main {
   margin-right: 5vw;
 }
 
-.footer span{
-  cursor:pointer;
+.footer span {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .artist-name-h1 {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .footer {
+    width: 100vw;
+    margin-left: 0;
+  }
+  #bell {
+    height: 0;
+    width: 0;
+  }
+  .section-2 {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  .section-1 {
+    width: 100%;
+  }
+  .main-artist-box {
+    width: 100%;
+    height: 35vw;
+  }
+  .main-art-img {
+    width: 40%;
+    height: 35vw;
+  }
+  .main-art-details {
+    height: 35vw;
+    width: 45vw;
+  }
+  .artist-name {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  .grey {
+    font-size: 17px;
+    line-height: 3vw;
+  }
+  .followers {
+    top: 3.5vw;
+  }
+  .language {
+    top: 9vw;
+  }
+  .description {
+    top: 14vw;
+  }
+  .button {
+    top: 27vw;
+    padding: 1.2vw 4vw;
+    margin: 4px 2px;
+  }
+
+  .button-simple {
+    top: 28vw;
+    left: 22vw;
+    font-size: 2.5vw;
+  }
+  .song-bar-container {
+    width: 100%;
+  }
+  .queue-song-box {
+    height: 5vw;
+    margin-top: 3.5vh;
+    padding: 5px;
+  }
+  .image {
+    width: 5vw;
+    height: 5vw;
+    margin-left: 4vw;
+  }
+  .number {
+    top: 2vw;
+    left: 0.5vw;
+  }
+  .song-name-h1 {
+    top: 1vw;
+    font-size: 1.4rem;
+  }
+  .artist-name-h1 {
+    display: none;
+  }
+  .active-song {
+    left: 35vw;
+    top: 0.2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .song-box {
+    width: 85%;
+    height: 15vw;
+  }
+
+  #fav {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  #bell {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .main-artist-box {
+    width: 100%;
+    height: 70vw;
+  }
+  .main-art-img {
+    width: 40%;
+    height: 45vw;
+  }
+  .main-art-details {
+    height: 45vw;
+    width: 50vw;
+  }
+  .artist-name {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  .grey {
+    font-size: 17px;
+    line-height: 3vw;
+  }
+  .followers {
+    top: 11vw;
+  }
+  .language {
+    top: 11vw;
+  }
+  .description {
+    top: 19vw;
+    line-height: 3.4vw;
+  }
+  .button {
+    top: 35vw;
+  }
+
+  .button-simple {
+    top: 36vw;
+    left: 25vw;
+  }
+  .queue-song-box {
+    height: 7vw;
+  }
+  .image {
+    width: 7vw;
+    height: 7vw;
+    margin-left: 4.5vw;
+  }
+  .number {
+    top: 2.8vw;
+  }
+  .song-name-h1 {
+    top: 1.9vw;
+    font-size: 3.2vw;
+  }
+  .heart {
+    top: 2.5vw;
+    right: 8vw;
+  }
+  .plus {
+    top: 2.9vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .icon-class {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .corner {
+    width: 25%;
+  }
+  .play-name-art {
+    width: 6vw;
+  }
+  .mid-part {
+    width: 50%;
+  }
+  .suffle {
+    margin-left: 0;
+    display: none;
+  }
+  .loop {
+    margin-right: 0;
+    display: none;
+  }
+  .margin {
+    margin-left: 1vw;
+  }
+  .hide {
+    display: none;
+  }
+  .custom-range-2 {
+    width: 60%;
+  }
+  #search-box input {
+    width: 11.5vw;
+  }
+  .main-artist-box {
+    width: 100%;
+    height: 80vw;
+  }
+  .main-art-img {
+    width: 50%;
+    height: 100%;
+  }
+  .artist-name {
+    font-size: 20px;
+  }
+  .grey {
+    font-size: 15px;
+  }
+  .followers {
+    top: 9vw;
+    left: 2vw;
+  }
+  .language {
+    display: none;
+  }
+  .description {
+    top: 15vw;
+  }
+  .button {
+    top: 37vw;
+  }
+
+  .button-simple {
+    top: 38.5vw;
+    left: 25vw;
+  }
+  .queue-song-box {
+    height: 10vw;
+  }
+  .image {
+    width: 10vw;
+    height: 10vw;
+    margin-left: 5vw;
+  }
+  .number {
+    top: 4vw;
+  }
+  .song-name-h1 {
+    top: 4vw;
+    font-size: 3.2vw;
+  }
+  .heart {
+    top: 3.3vw;
+    right: 8vw;
+  }
+  .plus {
+    top: 4vw;
+  }
 }
