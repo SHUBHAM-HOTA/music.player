@@ -620,16 +620,17 @@ main {
 
 /* dropdown btn for section 2 */
 .dropdown {
-  color: #eaf777;
+  color: #127d8c;
   margin-right: 5%;
   position: relative;
   display: inline-block;
+  font-size: 1.1vw;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #eaf777;
+  background-color: #127d8c;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
   z-index: 5 !important;
 }
