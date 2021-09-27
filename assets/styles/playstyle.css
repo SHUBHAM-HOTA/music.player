@@ -931,3 +931,25 @@ main {
     top: 4vw;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .button {
+    top: 40vw;
+    padding: 1.5vw 4.5vw;
+    margin: 4px 2px;
+  }
+
+  .button-simple {
+    top: 42.5vw;
+    left: 25vw;
+    font-size: 3.5vw;
+  }
+  .followers {
+    top: 10.5vw;
+  }
+  .description {
+    top: 15.5vw;
+    text-align: unset;
+    letter-spacing: 0.7px;
+  }
+}
