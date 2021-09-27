@@ -138,7 +138,7 @@ button {
   cursor: pointer;
 }
 
-/* bell animation */
+/* animation for bell icon in nav-bar */
 @keyframes shake {
   from,
   to {
@@ -241,80 +241,6 @@ main {
 /* --------------------------------------- */
 /* latest release section starting from here */
 
-/* .section-box {
-  margin-top: 8%;
-  width: 90%;
-  height: auto;
-  position: relative;
-  left: 5%;
-}
-.container-of-items {
-  height: auto;
-  position: relative;
-  top: -15%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.box-heading {
-  font-size: 1.2rem;
-  color: blanchedalmond;
-  position: relative;
-  top: -10%;
-}
-
-.song-box {
-  display: inline-block;
-  color: white;
-  width: 45%;
-  height: 7.1vw;
-  position: relative;
-  top: 0;
-  margin-top: 3%;
-  padding-bottom: 2%;
-  padding-top: 2%;
-  border: 2px solid #101642;
-}
-
-.song-box:hover {
-  background-color: #101642;
-  box-shadow: 0px 0px 15px 1px black;
-  cursor: pointer;
-  color: white;
-}
-
-.song-box img {
-  position: absolute;
-  width: 35%;
-  height: auto;
-  top: 0%;
-}
-
-.song-name {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-}
-
-.release-date {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-}
-
-.song-box i {
-  position: absolute;
-  top: 5%;
-  right: 5%;
-}
-.song-duration {
-  position: absolute;
-  top: 15%;
-  right: 5%;
-} */
-/* -----temp--code--here----- */
-
 .section-box {
   margin-top: 8%;
   width: 90%;
@@ -411,6 +337,9 @@ main {
   bottom: -20%;
   left: 20%;
 }
+
+/* images for artist section */
+
 #Ariana {
   background-image: url(../images/artists/ariana.png);
 }
@@ -483,6 +412,7 @@ main {
 }
 
 /* ------------------------------------------------- */
+/* genre for songs section */
 
 #main-gen-box {
   display: flex;
@@ -511,6 +441,8 @@ main {
   font-size: 1.6rem;
   transition: all ease-in-out 0.2s;
 }
+
+/* images for genre */
 
 #electronic {
   background-image: url(../images/genre/electronic-small.png);
@@ -613,6 +545,8 @@ main {
   display: inline-block;
 }
 
+/* images for podcaste section */
+
 #pop {
   background-image: url(../images/podcast/pop.png);
 }
@@ -683,6 +617,8 @@ main {
 .heading {
   font-size: 1.5rem;
 }
+
+/* dropdown btn for section 2 */
 .dropdown {
   color: #eaf777;
   margin-right: 5%;
@@ -1000,6 +936,8 @@ main {
   background-color: #0c1027;
   border-right: 3px solid #101642;
 }
+
+/* codes for responsive website(for smaller website) */
 
 @media screen and (max-width: 999px) {
   .section-2 {

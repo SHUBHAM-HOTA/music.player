@@ -203,6 +203,7 @@ main {
   overflow: hidden;
 }
 
+/* artist details box */
 .main-art-img {
   background-image: url(../images/artists/diljit-singh.jpg);
   background-size: cover;
@@ -279,6 +280,8 @@ main {
 }
 
 /* ---------------------------------------- */
+/* list of songs below artist details */
+
 .song-bar-container {
   width: 56.5vw;
   overflow: scroll;
@@ -372,6 +375,8 @@ main {
   letter-spacing: 0.1rem;
 }
 /* --------------------------------------- */
+/* images for songs */
+
 #song-1 {
   background-image: url(../images/latest-release/hotair.jpg);
 }
@@ -413,6 +418,7 @@ main {
 }
 
 /* -------------------------- */
+/* similar artist section */
 
 .big-artist-box > div {
   display: inline-block;
@@ -470,6 +476,8 @@ main {
 }
 
 /* ------------------------------------- */
+/* background images for similar artists */
+
 #art-1 {
   background-image: url(../images/artists/arjit.jpg);
 }
@@ -486,6 +494,9 @@ main {
   background-image: url(../images/artists/TaylorSwift.jpg);
 }
 /* --------------------------------------------- */
+
+/* recentlyplayed section */
+
 .art-recent-container {
   width: 100%;
   height: 50%;
@@ -669,6 +680,8 @@ main {
 .footer span {
   cursor: pointer;
 }
+
+/* to make this page responsive */
 
 @media screen and (max-width: 1200px) {
   .artist-name-h1 {
